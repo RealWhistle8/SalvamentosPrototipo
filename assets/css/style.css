@@ -1,0 +1,6 @@
+.custom-chart-area {
+    position: relative;
+    min-height: 10rem;
+    height: auto;
+    width: 200px;
+}

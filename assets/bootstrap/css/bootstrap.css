@@ -53,7 +53,7 @@
     --bs-font-sans-serif: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
-    --bs-body-font-family: var(--bs-font-sans-serif);
+      font-family: 'Montserrat', sans-serif;
     --bs-body-font-size: 1rem;
     --bs-body-font-weight: 400;
     --bs-body-line-height: 1.5;
@@ -14246,4 +14246,11 @@ footer.sticky-footer .copyright {
 
 body.sidebar-toggled footer.sticky-footer {
     width: 100%
+}
+
+.custom-chart-area {
+    position: relative;
+    min-height: 10rem;
+    height: auto;
+    width: 200px;
 }

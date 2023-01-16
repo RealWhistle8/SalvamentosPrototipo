@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <!--<link rel="stylesheet" href="assets/css/style.css">-->
 </head>
 
 <body id="page-top">
@@ -22,8 +25,8 @@
                 <div style="color: white; margin-top: 10px;"><span>Salvamentos</span></div>
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Visor de Seguimiento</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="profile.html"><i class="fas fa-user"></i><span>Traslado</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>Documentación</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="ubicacion.html"><i class="fas fa-user"></i><span>Traslado</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="documentacion.html"><i class="fas fa-table"></i><span>Documentación</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Venta</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-user-circle"></i><span>Facturación y Entrega</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-user-circle"></i><span>Destrucción / Abandono</span></a></li>
@@ -77,47 +80,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <!--
-                            <li class="nav-item dropdown no-arrow mx-1">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="badge bg-danger badge-counter">7</span><i class="fas fa-envelope fa-fw"></i></a>
-                                    <div class="dropdown-menu dropdown-menu-end dropdown-list animated--grow-in">
-                                        <h6 class="dropdown-header">alerts center</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
-                                                <div class="bg-success status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
-                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
-                                                <div class="status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
-                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
-                                                <div class="bg-warning status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
-                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
-                                            </div>
-                                        </a><a class="dropdown-item d-flex align-items-center" href="#">
-                                            <div class="dropdown-list-image me-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
-                                                <div class="bg-success status-indicator"></div>
-                                            </div>
-                                            <div class="fw-bold">
-                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
-                                                <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
-                                            </div>
-                                        </a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                                    </div>
-                                </div>
-                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
-                            </li>-->
+                           
                             <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item dropdown no-arrow">
                                 <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Carlos Arciniega</span><img class="border rounded-circle img-profile" src="assets/img/avatars/avatar3.jpeg"></a>
@@ -131,7 +94,7 @@
                 </nav>
                 <div class="container-fluid">
                     <div class="d-sm-flex justify-content-between align-items-center mb-4">
-                        <h3 class="text-dark mb-0">Visor de Seguimiento</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generar Reporte</a>
+                        <h3 class="text-primary m-9 fw-bold">Visor de Seguimiento</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generar Reporte</a>
                     </div>
                     <!--Metrics area-->
                     <div class="row">
@@ -267,11 +230,11 @@
                             <div class="card shadow mb-4" style="height: 287px;">
                                 <div class="card-header d-flex justify-content-between align-items-center">
                                     <h6 class="text-primary fw-bold m-0">Traslados en Oficinas Estratégicas</h6>
-                                    <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
-                                        <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
+                                    <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" ><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                                       <!-- <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
                                             <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#">&nbsp;Action</a><a class="dropdown-item" href="#">&nbsp;Another action</a>
                                             <div class="dropdown-divider"></div><a class="dropdown-item" href="#">&nbsp;Something else here</a>
-                                        </div>
+                                        </div>-->
                                     </div>
                                 </div>
                                 <div class="card-body overflow-auto">
@@ -324,34 +287,7 @@
                     <!--Exceptions area-->
                     <div class="row">
                         
-                          <!--  <div class="card shadow mb-4">
-                                <div class="card-header py-3">
-                                    <h6 class="text-primary fw-bold m-0">Traslados en Oficinas Estratégicas</h6>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="small fw-bold">Querétaro<span class="float-end">20%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-danger" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;"><span class="visually-hidden">20%</span></div>
-                                    </div>
-                                    <h4 class="small fw-bold">Guadalajara<span class="float-end">40%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-warning" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;"><span class="visually-hidden">40%</span></div>
-                                    </div>
-                                    <h4 class="small fw-bold">Nuevo León<span class="float-end">60%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-primary" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;"><span class="visually-hidden">60%</span></div>
-                                    </div>
-                                    <h4 class="small fw-bold">CDMX<span class="float-end">80%</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-info" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"><span class="visually-hidden">80%</span></div>
-                                    </div>
-                                    <h4 class="small fw-bold">León<span class="float-end">Sin pendientes!</span></h4>
-                                    <div class="progress mb-4">
-                                        <div class="progress-bar bg-success" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;"><span class="visually-hidden">100%</span></div>
-                                    </div>
-                                </div>
-                            </div>-->
-                            
+                        
                             <div class="col col-xs-12 mb-4">
                                 <div class="card shadow mb-4">
                                     <h6 class="text-primary fw-bold m-0"></h6>
@@ -362,6 +298,7 @@
                                       <button class="btn btn-sm btn-outline-secondary" type="button">Totales</button>
                                     </form>
                                   </nav>
+                                     <!--
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
                                         
@@ -370,19 +307,62 @@
                                             <div class="col me-2">
                                                 <h6 class="mb-0"><strong> Taslado 1</strong></h6><span class="text-s">PT Evidente al 89%</span>
                                             </div>
-                                            <div class="col-auto">
-                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-1"><label class="form-check-label" for="formCheck-1"></label></div>
-                                            </div>
+                                            <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Ver detalle
+                                              </button>
+                                              
+                                              
+                                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                      ...
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                      <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
+                                                      
+                                                      
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
                                         </div>
                                     </li>
+                                 
                                     <li class="list-group-item">
                                         <div class="row align-items-center no-gutters">
                                             <div class="col me-2">
                                                 <h6 class="mb-0"><strong>Traslado 2</strong></h6><span class="text-s">Adeudo de 85% sobre valor comercial</span>
                                             </div>
-                                            <div class="col-auto">
-                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2"></label></div>
-                                            </div>
+                                            <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Ver detalle
+                                              </button>
+                                              
+                                          
+                                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                      ...
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                      <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
+                                                      
+                                                      
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
                                         </div>
                                     </li>
                                     <li class="list-group-item">
@@ -390,13 +370,342 @@
                                             <div class="col me-2">
                                                 <h6 class="mb-0"><strong>Traslado 3</strong></h6><span class="text-s">Calcinado al 92%</span>
                                             </div>
-                                            <div class="col-auto">
-                                                <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3"></label></div>
-                                            </div>
+                                            
+                                            <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Ver detalle
+                                              </button>
+                                              
+                                           
+                                              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                      ...
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                      <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
+                                                      
+                                                      
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
                                         </div>
                                          
                                     </li>
-                                </ul>
+                                </ul>-->
+                                
+                                <div class="card shadow mb-4" style="height: 350px;">
+                                  <div class="card-body overflow-auto">
+                               
+                                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                      <div class="fw-bold">Traslado 1</div>
+                                      <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Ver detalle
+                                      </button>
+                                      
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              ...
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
+                                              
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">14</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                      <div class="fw-bold">Traslado 2</div>
+                                      <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Ver detalle
+                                      </button>
+                                      
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              ...
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
+                                              
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">13</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                      <div class="fw-bold">Traslado 3</div>
+                                      <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Ver detalle
+                                      </button>
+                                      
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              ...
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
+                                              
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">13</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                      <div class="fw-bold">Traslado 4</div>
+                                      <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Ver detalle
+                                      </button>
+                                      
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              ...
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
+                                              
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">12</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                      <div class="fw-bold">Traslado 5</div>
+                                      <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Ver detalle
+                                      </button>
+                                      
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              ...
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
+                                              
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">12</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                      <div class="fw-bold">Traslado 6</div>
+                                      <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Ver detalle
+                                      </button>
+                                      
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              ...
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
+                                              
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <span class="badge bg-danger rounded-pill">10</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                      <div class="fw-bold">Traslado 7</div>
+                                      <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Ver detalle
+                                      </button>
+                                      
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              ...
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
+                                              
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <span class="badge bg-warning rounded-pill">9</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                      <div class="fw-bold">Traslado 8</div>
+                                      <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Ver detalle
+                                      </button>
+                                      
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              ...
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
+                                              
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <span class="badge bg-warning rounded-pill">8</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                      <div class="fw-bold">Traslado 9</div>
+                                      <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Ver detalle
+                                      </button>
+                                      
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              ...
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
+                                              
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <span class="badge bg-warning rounded-pill">8</span>
+                                  </li>
+                                  <li class="list-group-item d-flex justify-content-between align-items-start">
+                                    <div class="ms-2 me-auto">
+                                      <div class="fw-bold">Traslado 10</div>
+                                      <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Ver detalle
+                                      </button>
+                                      
+                                      <!-- Modal -->
+                                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="modal-header">
+                                              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                              ...
+                                            </div>
+                                            <div class="modal-footer">
+                                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                              <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
+                                              
+                                              
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <span class="badge bg-primary rounded-pill">1</span>
+                                  </li>
+                              
+                              </div>
+                            </div>
                             </div>
                             <div class="col col-xs-12 mb-4">
                                 <div class="card shadow mb-4">
@@ -433,7 +742,9 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                      <button type="button" class="btn btn-primary">Guardar cambios</button>
+                                                      <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
+                                                      
+                                                      
                                                     </div>
                                                   </div>
                                                 </div>
@@ -462,7 +773,7 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                      <button type="button" class="btn btn-primary">Guardar cambios</button>
+                                                      <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -491,7 +802,7 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                      <button type="button" class="btn btn-primary">Guardar cambios</button>
+                                                      <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -536,7 +847,7 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                      <button type="button" class="btn btn-primary">Guardar cambios</button>
+                                                      <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -565,7 +876,7 @@
                                                     </div>
                                                     <div class="modal-footer">
                                                       <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                      <button type="button" class="btn btn-primary">Guardar cambios</button>
+                                                      <button onclick="SaveDoc()" class="btn btn-primary">Guardar cambios</button>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -682,12 +993,12 @@
                                     <li class="list-group-item">
                                         <div class="row align-items-center no-gutters">
                                             <div class="col me-2">
-                                                <h6 class="mb-0"><strong>Facturación 3</strong></h6><span class="text-s">Calcinado al 92%</span>
+                                                <h6 class="mb-0"><strong>Facturación 3</strong></h6><span class="text-s">Adeudo de 85% sobre valor comercial</span>
                                             </div>
-                                            <!--<button>
+                                            <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                 Ver detalle
-                                              </button>-->
-                                              <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</a>
+                                              </button>
+                                              
                                               <!-- Modal -->
                                               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog">
@@ -707,7 +1018,6 @@
                                                 </div>
                                               </div>
                                         </div>
-                                        
                                     </li>
                                 </ul>
                             </div>
@@ -789,12 +1099,12 @@
                                     <li class="list-group-item">
                                         <div class="row align-items-center no-gutters">
                                             <div class="col me-2">
-                                                <h6 class="mb-0"><strong>Facturación 3</strong></h6><span class="text-s">Calcinado al 92%</span>
+                                                <h6 class="mb-0"><strong>Facturación </strong></h6><span class="text-s">Adeudo de 85% sobre valor comercial</span>
                                             </div>
-                                            <!--<button>
+                                            <button type="button" class="btn bg-transparent" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                                 Ver detalle
-                                              </button>-->
-                                              <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</a>
+                                              </button>
+                                              
                                               <!-- Modal -->
                                               <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog">
@@ -814,64 +1124,12 @@
                                                 </div>
                                               </div>
                                         </div>
-                                        
                                     </li>
                                 </ul>
                             </div>
                             
                         </div>
-                        <!--
-                        <div class="col">
-                            <div class="row">
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card text-white bg-primary shadow">
-                                        <div class="card-body">
-                                            <p class="m-0">Primary</p>
-                                            <p class="text-white-50 small m-0">#4e73df</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card text-white bg-success shadow">
-                                        <div class="card-body">
-                                            <p class="m-0">Success</p>
-                                            <p class="text-white-50 small m-0">#1cc88a</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card text-white bg-info shadow">
-                                        <div class="card-body">
-                                            <p class="m-0">Info</p>
-                                            <p class="text-white-50 small m-0">#36b9cc</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card text-white bg-warning shadow">
-                                        <div class="card-body">
-                                            <p class="m-0">Warning</p>
-                                            <p class="text-white-50 small m-0">#f6c23e</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card text-white bg-danger shadow">
-                                        <div class="card-body">
-                                            <p class="m-0">Danger</p>
-                                            <p class="text-white-50 small m-0">#e74a3b</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 mb-4">
-                                    <div class="card text-white bg-secondary shadow">
-                                        <div class="card-body">
-                                            <p class="m-0">Secondary</p>
-                                            <p class="text-white-50 small m-0">#858796</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>-->
+                      
                             
                         </div>
                         
@@ -881,6 +1139,7 @@
             </div>
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
+    <script src="/assets/js/Validaciones.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/chart.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
